@@ -1,0 +1,96 @@
+<%- include('partials/header') %>
+
+<!-- ============================================================
+     PAGE HEADING
+     ============================================================ -->
+<section class="page-heading">
+  <div class="container">
+    <h1 class="page-title">Contact Me</h1>
+    <p class="page-subtitle">Let's connect — I'd love to hear from you.</p>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT — info panel + message form
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Contact information panel -->
+      <div class="col-lg-5">
+        <div class="contact-panel">
+          <h3 class="contact-panel-title">Get in touch</h3>
+          <p class="contact-panel-text">
+            Whether it's an opportunity, a question or a quick hello, feel free to
+            reach out using the details below or the form.
+          </p>
+
+          <ul class="contact-list">
+            <li class="contact-item">
+              <i class="bi bi-telephone contact-item-icon"></i>
+              <div>
+                <span class="contact-item-label">Phone</span>
+                <a class="contact-item-value" href="tel:+8619991618708">+86 199 9161 8708</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="bi bi-envelope contact-item-icon"></i>
+              <div>
+                <span class="contact-item-label">Email</span>
+                <a class="contact-item-value" href="mailto:212jackieshu@gmail.com">212jackieshu@gmail.com</a>
+              </div>
+            </li>
+            <li class="contact-item">
+              <i class="bi bi-geo-alt contact-item-icon"></i>
+              <div>
+                <span class="contact-item-label">Location</span>
+                <span class="contact-item-value">Suzhou, China</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Message form -->
+      <div class="col-lg-7">
+        <div class="form-card">
+          <h3 class="form-title">Send a message</h3>
+          <form action="/contact" method="POST" id="contactForm">
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="firstName" class="form-label">First Name</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" required />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="lastName" class="form-label">Last Name</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-3">
+                <label for="contactNumber" class="form-label">Contact Number</label>
+                <input type="tel" class="form-control" id="contactNumber" name="contactNumber" required />
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" name="email" required />
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-accent btn-lg">
+              <i class="bi bi-send me-2"></i>Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

@@ -1,0 +1,607 @@
+/* ============================================================
+   File:        style.css
+   Student Name: Shu Haoyang (Jackie)
+   StudentID:   2024110172
+   Date:        November 8, 2026
+
+   Purpose: Custom styling for the Express Portfolio site,
+   layered on top of the Bootstrap 5 CSS framework.
+   ============================================================ */
+
+/* ------------------------------------------------------------
+   1. DESIGN TOKENS
+   ------------------------------------------------------------ */
+:root {
+  --navy: #0f1b2d;
+  --navy-light: #1b2a4a;
+  --accent: #14b8a6;
+  --accent-dark: #0d9488;
+  --accent-soft: #e6fffb;
+  --bg: #f6f8fb;
+  --surface: #ffffff;
+  --text: #243b53;
+  --muted: #627d98;
+  --border: #e2e8f0;
+
+  --font-display: "Poppins", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+/* ------------------------------------------------------------
+   2. BASE
+   ------------------------------------------------------------ */
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background-color: var(--bg);
+  line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--navy);
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------------
+   3. NAVIGATION BAR
+   ------------------------------------------------------------ */
+.site-navbar {
+  background-color: var(--navy);
+  box-shadow: 0 2px 20px rgba(15, 27, 45, 0.35);
+  padding: 0.85rem 0;
+}
+
+.site-navbar .navbar-brand {
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 600;
+}
+
+.brand-text {
+  font-size: 1.15rem;
+  letter-spacing: 0.01em;
+}
+
+.site-logo .logo-initials {
+  font-family: var(--font-display);
+  font-size: 15px;
+  font-weight: 700;
+  fill: var(--navy);
+}
+
+.site-logo .logo-initials--sm {
+  font-size: 12px;
+}
+
+.site-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.78);
+  font-weight: 500;
+  padding: 0.5rem 0.9rem;
+  border-radius: 8px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.site-navbar .nav-link:hover {
+  color: #fff;
+}
+
+.site-navbar .nav-link.active {
+  color: var(--accent);
+  background-color: rgba(20, 184, 166, 0.12);
+}
+
+/* ------------------------------------------------------------
+   4. BUTTONS
+   ------------------------------------------------------------ */
+.btn-accent {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #06302b;
+  font-weight: 600;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: var(--accent-dark);
+  border-color: var(--accent-dark);
+  color: #fff;
+}
+
+.btn-outline-light {
+  border-color: rgba(255, 255, 255, 0.55);
+  color: #fff;
+}
+
+.btn-outline-light:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+  color: #fff;
+}
+
+/* ------------------------------------------------------------
+   5. HERO (home page)
+   ------------------------------------------------------------ */
+.hero {
+  background:
+    radial-gradient(1200px 500px at 85% -10%, rgba(20, 184, 166, 0.22), transparent 60%),
+    linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: #fff;
+  padding: 6rem 0 5.5rem;
+}
+
+.hero-eyebrow {
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  color: #fff;
+  font-size: clamp(2.75rem, 6vw, 4.25rem);
+  font-weight: 700;
+  line-height: 1.05;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+  margin-bottom: 1rem;
+  max-width: 38rem;
+}
+
+.hero-text {
+  color: rgba(255, 255, 255, 0.72);
+  max-width: 36rem;
+  margin-bottom: 1.75rem;
+}
+
+.hero-actions .btn {
+  min-width: 9.5rem;
+}
+
+.hero-badge {
+  display: inline-block;
+  filter: drop-shadow(0 12px 30px rgba(20, 184, 166, 0.25));
+}
+
+.hero-initials {
+  font-family: var(--font-display);
+  font-size: 40px;
+  font-weight: 700;
+  fill: rgba(255, 255, 255, 0.9);
+}
+
+/* ------------------------------------------------------------
+   6. SECTIONS & PAGE HEADINGS
+   ------------------------------------------------------------ */
+.section {
+  padding: 4.5rem 0;
+}
+
+.section--alt {
+  background-color: var(--surface);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.page-heading {
+  background: linear-gradient(160deg, var(--navy) 0%, var(--navy-light) 100%);
+  color: #fff;
+  padding: 3.5rem 0;
+}
+
+.page-title {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.page-subtitle {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------
+   7. MISSION STATEMENT (home)
+   ------------------------------------------------------------ */
+.mission-card {
+  background: var(--surface);
+  border-left: 4px solid var(--accent);
+  border-radius: 14px;
+  padding: 2.25rem 2.5rem;
+  box-shadow: 0 10px 30px rgba(15, 27, 45, 0.06);
+}
+
+.mission-label {
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--accent-dark);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.78rem;
+  margin-bottom: 0.75rem;
+}
+
+.mission-text {
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--navy);
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/* ------------------------------------------------------------
+   8. HIGHLIGHT CARDS (home)
+   ------------------------------------------------------------ */
+.highlight-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  color: var(--text);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(15, 27, 45, 0.1);
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.highlight-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-text {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------
+   9. PROFILE (about page)
+   ------------------------------------------------------------ */
+.profile-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15, 27, 45, 0.06);
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--accent-soft);
+  margin-bottom: 1.25rem;
+}
+
+.profile-name {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.profile-ename {
+  color: var(--accent-dark);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.profile-meta {
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.bio-heading {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.bio p {
+  color: var(--text);
+}
+
+.skill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.skill-chip {
+  background: var(--accent-soft);
+  color: var(--accent-dark);
+  border: 1px solid rgba(20, 184, 166, 0.25);
+  padding: 0.4rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* ------------------------------------------------------------
+   10. PROJECT CARDS
+   ------------------------------------------------------------ */
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(15, 27, 45, 0.12);
+}
+
+.project-image {
+  height: 190px;
+  object-fit: cover;
+  background: var(--accent-soft);
+}
+
+.project-category {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-dark);
+  margin-bottom: 0.5rem;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.35rem;
+}
+
+.project-role {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.project-desc {
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.project-outcome {
+  color: var(--accent-dark);
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.9rem;
+  margin-top: 1rem;
+}
+
+/* ------------------------------------------------------------
+   11. SERVICE CARDS
+   ------------------------------------------------------------ */
+.service-card {
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+  height: 100%;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 34px rgba(15, 27, 45, 0.1);
+  border-color: var(--accent);
+}
+
+.service-icon {
+  font-size: 2.1rem;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.service-title {
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.service-desc {
+  color: var(--muted);
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------------------------
+   12. CONTACT PANEL & FORM
+   ------------------------------------------------------------ */
+.contact-panel {
+  background: var(--navy);
+  color: #fff;
+  border-radius: 16px;
+  padding: 2.25rem;
+  height: 100%;
+}
+
+.contact-panel-title {
+  color: #fff;
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.contact-panel-text {
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 1.75rem;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-item:last-child {
+  margin-bottom: 0;
+}
+
+.contact-item-icon {
+  color: var(--accent);
+  font-size: 1.35rem;
+  line-height: 1.2;
+}
+
+.contact-item-label {
+  display: block;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.15rem;
+}
+
+.contact-item-value {
+  color: #fff;
+  font-weight: 500;
+}
+
+.contact-item-value:hover {
+  color: var(--accent);
+}
+
+.form-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2.25rem;
+  box-shadow: 0 10px 30px rgba(15, 27, 45, 0.06);
+}
+
+.form-title {
+  font-size: 1.35rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-weight: 500;
+  color: var(--navy);
+}
+
+.form-control:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(20, 184, 166, 0.15);
+}
+
+/* ------------------------------------------------------------
+   13. FOOTER
+   ------------------------------------------------------------ */
+.site-footer {
+  background: var(--navy);
+  color: #fff;
+  padding: 2.75rem 0;
+}
+
+.footer-muted {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.92rem;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.78);
+  margin-left: 1.25rem;
+  font-weight: 500;
+}
+
+.footer-links a:first-child {
+  margin-left: 0;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+/* ------------------------------------------------------------
+   14. ERROR PAGE
+   ------------------------------------------------------------ */
+.error-body {
+  background: var(--navy);
+}
+
+.error-wrap {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.error-code {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.error-title {
+  color: #fff;
+  margin: 0.5rem 0 1rem;
+}
+
+.error-text {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+}
+
+.error-stack {
+  color: rgba(255, 255, 255, 0.55);
+  text-align: left;
+  max-width: 100%;
+  overflow-x: auto;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+}
+
+/* ------------------------------------------------------------
+   15. RESPONSIVE TWEAKS
+   ------------------------------------------------------------ */
+@media (max-width: 991.98px) {
+  .hero {
+    padding: 4rem 0;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .footer-links a {
+    margin-left: 0;
+    margin-right: 1rem;
+  }
+}

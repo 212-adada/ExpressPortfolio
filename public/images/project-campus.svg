@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Campus Web Design project">
+  <defs>
+    <linearGradient id="campusGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3b82f6" />
+      <stop offset="1" stop-color="#0f1b2d" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#campusGrad)" />
+  <circle cx="680" cy="70" r="150" fill="rgba(255,255,255,0.08)" />
+  <circle cx="120" cy="440" r="110" fill="rgba(255,255,255,0.06)" />
+
+  <!-- Building / campus icon -->
+  <g fill="rgba(255,255,255,0.92)">
+    <polygon points="400,120 300,200 500,200" />
+    <rect x="320" y="200" width="160" height="150" />
+  </g>
+  <g fill="#0f1b2d">
+    <rect x="340" y="230" width="40" height="40" />
+    <rect x="420" y="230" width="40" height="40" />
+    <rect x="380" y="290" width="40" height="60" />
+  </g>
+
+  <text x="400" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#ffffff">Campus Web Design</text>
+  <text x="400" y="455" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="rgba(255,255,255,0.75)">2nd Prize — Web Design Competition</text>
+</svg>

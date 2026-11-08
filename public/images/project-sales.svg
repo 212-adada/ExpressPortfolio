@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Semiconductor B2B sales project">
+  <defs>
+    <linearGradient id="salesGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f59e0b" />
+      <stop offset="1" stop-color="#0f1b2d" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#salesGrad)" />
+  <circle cx="680" cy="70" r="150" fill="rgba(255,255,255,0.08)" />
+  <circle cx="120" cy="440" r="110" fill="rgba(255,255,255,0.06)" />
+
+  <!-- Upward chart icon -->
+  <g fill="none" stroke="rgba(255,255,255,0.92)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="270,300 350,250 420,275 530,170" />
+  </g>
+  <g fill="#ffffff">
+    <circle cx="270" cy="300" r="10" />
+    <circle cx="350" cy="250" r="10" />
+    <circle cx="420" cy="275" r="10" />
+    <circle cx="530" cy="170" r="10" />
+  </g>
+  <polygon points="530,130 520,158 540,158" fill="#ffffff" />
+
+  <text x="400" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="40" font-weight="700" fill="#ffffff">B2B Technical Sales</text>
+  <text x="400" y="455" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="20" fill="rgba(255,255,255,0.75)">Semiconductor Equipment · Client Visits</text>
+</svg>

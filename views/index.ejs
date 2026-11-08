@@ -1,0 +1,124 @@
+<%- include('partials/header') %>
+
+<!-- ============================================================
+     HERO — welcome message + primary call-to-action
+     ============================================================ -->
+<header class="hero">
+  <div class="container hero-inner">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-title">Jackie Shu</h1>
+        <p class="hero-subtitle">
+          Software Technology student with a bilingual edge — blending technical
+          foundations with real customer-facing experience.
+        </p>
+        <p class="hero-text">
+          I'm currently studying Software Technology at Suzhou Centennial College,
+          building skills across web development, databases and technical sales.
+          Welcome to my portfolio.
+        </p>
+
+        <div class="d-flex flex-wrap gap-3 hero-actions">
+          <a href="/about" class="btn btn-accent btn-lg">
+            About Me <i class="bi bi-arrow-right ms-1"></i>
+          </a>
+          <a href="/projects" class="btn btn-outline-light btn-lg">
+            View Projects
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 d-none d-lg-block text-center">
+        <div class="hero-badge">
+          <svg width="180" height="180" viewBox="0 0 40 40" aria-hidden="true">
+            <polygon
+              points="20,2 36,11 36,29 20,38 4,29 4,11"
+              fill="rgba(20,184,166,0.18)"
+              stroke="rgba(20,184,166,0.6)"
+              stroke-width="0.8" />
+            <text x="20" y="25" text-anchor="middle" class="hero-initials">JS</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     THANK-YOU MESSAGE (shown after a contact form submission)
+     ============================================================ -->
+<% if (showThanks) { %>
+<div class="container mt-4">
+  <div class="alert alert-success alert-dismissible fade show" role="alert">
+    <i class="bi bi-check-circle-fill me-2"></i>
+    Thanks for reaching out! Your message has been received.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+</div>
+<% } %>
+
+<!-- ============================================================
+     MISSION STATEMENT
+     ============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="mission-card">
+          <span class="mission-label">Mission Statement</span>
+          <p class="mission-text">
+            To connect technical understanding with clear communication — helping
+            customers, teammates and partners turn ideas into working solutions,
+            while growing continuously as a technical sales and support professional.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     QUICK HIGHLIGHTS — a fast route into the other pages
+     ============================================================ -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <a href="/projects" class="card highlight-card h-100">
+          <div class="card-body">
+            <i class="bi bi-kanban highlight-icon"></i>
+            <h3 class="highlight-title">Projects</h3>
+            <p class="highlight-text">
+              Web design, full-stack work and hands-on technical sales experience.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="/services" class="card highlight-card h-100">
+          <div class="card-body">
+            <i class="bi bi-tools highlight-icon"></i>
+            <h3 class="highlight-title">Services</h3>
+            <p class="highlight-text">
+              Web development, technical support and bilingual communication.
+            </p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="/contact" class="card highlight-card h-100">
+          <div class="card-body">
+            <i class="bi bi-chat-dots highlight-icon"></i>
+            <h3 class="highlight-title">Contact Me</h3>
+            <p class="highlight-text">
+              Have a question or opportunity? Get in touch.
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include('partials/footer') %>

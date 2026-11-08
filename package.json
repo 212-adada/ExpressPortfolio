@@ -1,0 +1,18 @@
+{
+  "name": "expressportfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "COMP229 Assignment 1 - Personal Portfolio built with ExpressJS and EJS",
+  "author": "Shu Haoyang (Jackie) - 2024110172",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.7",
+    "debug": "~2.6.9",
+    "ejs": "~3.1.10",
+    "express": "~4.21.2",
+    "http-errors": "~2.0.0",
+    "morgan": "~1.10.0"
+  }
+}
